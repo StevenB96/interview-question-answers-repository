@@ -1,0 +1,1 @@
+A collection of answers to common interview questions focusing on impact-focused examples.
