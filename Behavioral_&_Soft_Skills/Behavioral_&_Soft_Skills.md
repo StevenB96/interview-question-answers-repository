@@ -17,7 +17,7 @@ I’m looking to join a team where I can own features end-to-end and help delive
 
 ___
 
-### 2. Why do you want to be a software/full-stack developer?.
+### 2. Why do you want to be a software/full-stack developer?
 
 I became a full-stack developer because software combines everything I enjoy about engineering: problem solving, systems thinking and fast feedback loops. 
 
@@ -53,7 +53,7 @@ ___
 
 ### 4. Describe your biggest professional achievement to date.
 
-Project references: Oman Foreign Ministry
+Project references: Oman FM
 
 My biggest achievement was leading the stage-one delivery of a mobile app and admin portal.
 
@@ -66,7 +66,7 @@ _It showed I could own both technical design and team delivery end-to-end._
 ___
 
 
-### 5. What is the hardest problem you’ve solved, and how did you solve it?.
+### 5. What is the hardest problem you’ve solved, and how did you solve it? / Describe a time you faced a significant challenge and how you overcame it?
 
 Project references: obs-etl-k8s-demo-project
 
@@ -106,7 +106,7 @@ ___
 
 ### 8. Give an example of working effectively under pressure.
 
-Project references: Alternative Commercial Finance
+Project references: ACF
 
 I had a “poison-chalice” project where I was the primary developer and had to reverse-engineer the domain from code because migrations wouldn’t run. 
 
@@ -154,9 +154,9 @@ Finally, I communicate the proposed prioritisation to stakeholders and re-evalua
 
 ___
 
-### 12. Give an example of when you took initiative or leadership in a project.
+### 12. Give an example of when you took initiative or leadership in a project. / How would you handle incomplete or changing requirements in a project?
 
-Project references: Oman Foreign Ministry
+Project references: Oman FM
 
 On one project the “nearest embassy” logic was undefined. I documented options, but that slowed decisions, so I organised a face-to-face meeting with the client and project team. 
 
@@ -185,7 +185,7 @@ _The initiative was later dropped, but the process taught me to present trade-of
 ___
 
 
-### 15. How do you ensure you stay current with new technologies? (Learning habits)
+### 15. How do you ensure you stay current with new technologies?
 
 **I combine courses, community and hands-on practice.** 
 
@@ -227,7 +227,7 @@ ___
 
 ### 19. Describe a time you had to learn something quickly to complete a task.
 
-Project references: 2PD
+Project references: ACF
 
 I needed to add GraphQL to an admin portal fast. 
 
@@ -246,3 +246,19 @@ References: Eleni, Jordan, Audrius
 Colleagues would describe me as dependable, detail-focused and collaborative — someone who raises the bar on quality while being easy to work with.
 
 They’d say I’m logical, calm under pressure, and willing to mentor others. As one colleague put it, “Steven is a great presence to have around.”
+
+___
+
+
+### 21. Describe a time you collaborated with others to overcome a challenge.
+
+Project references: Bare Dating
+
+During the Bare Dating project, the client decided to bring development in-house and hired a new developer to take over the application. My role was to ensure the transition was smooth and that they could run the system independently.
+
+I prepared a concise handover pack covering the architecture, deployment steps and environment setup, then walked through the codebase with them and performed a deployment together so they could see the process end to end.
+
+After supporting their first releases and answering questions during the transition period, the developer was able to manage deployments independently and the handover completed without any disruption to the service.
+
+
+
