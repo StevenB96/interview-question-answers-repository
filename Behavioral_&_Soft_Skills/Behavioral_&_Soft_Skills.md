@@ -15,6 +15,8 @@ Recently I took a focused break to upskill in cloud, generative AI and modern fr
 
 I’m looking to join a team where I can own features end-to-end and help deliver scalable, user-focused products, including pragmatic AI integrations.
 
+(Word Count - 89)
+
 ___
 
 ### 2. Why do you want to be a software/full-stack developer?
@@ -26,6 +28,8 @@ I became a full-stack developer because software combines everything I enjoy abo
 In my last role I led a UX demo that cut customer queries by 31% and built an ETL pipeline that removed manual syncing. 
 
 **I enjoy working across teams to turn customer needs into robust code and I want to continue doing that here.**
+
+(Word Count - 96)
 
 ___
 
@@ -48,6 +52,8 @@ Judging the right level of documentation — While documentation is important fo
 
 _To address this, I follow a lightweight rule: document intent and key interfaces (such as environment variables, core data entities, and high-level sequences) and favour concise diagrams or short READMEs over lengthy documents. I also include an owner and review date so documentation remains useful and up to date._
 
+(Word Count - 192)
+
 ___
 
 
@@ -62,6 +68,8 @@ I translated stakeholder needs into a prioritised backlog, designed a resilient 
 We delivered the MVP, the client commissioned follow-on work, and the juniors became productive contributors.
 
 _It showed I could own both technical design and team delivery end-to-end._
+
+(Word Count - 89)
 
 ___
 
@@ -78,6 +86,8 @@ Eventually I audited image tags and discovered upstream image availability/polic
 
 _The key was methodical elimination, targeted research and being willing to change the image source._
 
+(Word Count - 111)
+
 ___
 
 ### 6. Tell me about a time you failed or received criticism and what you learned.
@@ -90,6 +100,8 @@ I was told I should have consulted stakeholders before deviating from the ticket
 
 **Now I raise proposed deviations early and update the backlog with the team before changing course.**
 
+(Word Count - 95)
+
 ___
 
 ### 7. How do you handle tight deadlines or stressful situations?
@@ -101,6 +113,8 @@ Project references: Bare Dating
 I identify the highest-value deliverables, decompose them into small tasks, and keep the team and stakeholders updated so blockers are visible. For example, when a client publicly announced features before they were ready. 
 
 We prioritised the demo-critical items, ran quick check-ins, and kept the client informed — which let us deliver the essentials without surprises.
+
+(Word Count - 91)
 
 ___
 
@@ -116,6 +130,8 @@ Despite runtime and SQL compatibility issues, I delivered the features and the d
 
 _The lesson: rapid learning + structured investigation + proactive stakeholder communication lets you succeed when you’re under pressure._
 
+(Word Count - 103)
+
 ___
 
 ### 9. Describe a conflict you had with a teammate and how you resolved it.
@@ -127,6 +143,8 @@ After discussion I pointed out that I had to maintain the code, so we agreed I�
 Then I wrapped the SQL in a documented, tested function and added a performance test so we kept the speed benefit but regained clarity. 
 
 _We resolved it with benchmarks, documentation and a pragmatic compromise._
+
+(Word Count - 85)
 
 ___
 
@@ -142,6 +160,8 @@ I built two projects: an Observability & ETL demo to practise deployment and mon
 
 **I set success criteria, sought peer review and iterated — feedback became a measurable improvement loop.**
 
+(Word Count - 124)
+
 ___
 
 ### 11. How do you prioritise tasks when given multiple priorities?
@@ -151,6 +171,8 @@ ___
 High-value, low-effort items come first, but deadlines bump priorities up. I check for blockers (credentials, a third-party, or a subject-matter expert) and group related tasks where it reduces work. 
 
 Finally, I communicate the proposed prioritisation to stakeholders and re-evaluate regularly as new information arrives.
+
+(Word Count - 101)
 
 ___
 
@@ -164,6 +186,8 @@ Walking everyone through the trade-offs led to a quick clarification and a simpl
 
 _It showed that bringing the right people together can be the fastest way to resolve ambiguous requirements._
 
+(Word Count - 88)
+
 ___
 
 ### 13. How do you communicate complex technical concepts to non-technical stakeholders?
@@ -171,6 +195,8 @@ ___
 **I focus on outcomes, use simple analogies and visuals, and avoid jargon.**
 
 For example, explaining an ETL sync to non-technical stakeholders I called the website the “source of truth” and compared updates to a news feed refresh, then showed a simple diagram of the flow. That kept the discussion on user impact and got fast buy-in.
+
+(Word Count - 77)
 
 ___
 
@@ -181,6 +207,8 @@ My manager proposed splitting boilerplate into multiple repos and automating adm
 I raised operational concerns — extra CI, secrets and limited practical benefit — and presented examples where modularisation helps. I respected the decision, helped implement it, and suggested a pilot approach. 
 
 _The initiative was later dropped, but the process taught me to present trade-offs clearly and propose measurable pilots before wide adoption._
+
+(Word Count - 91)
 
 ___
 
@@ -195,6 +223,8 @@ I attend meetups and conferences, browse GitHub and Reddit, and set aside time f
 
 **I also share findings with peers through pair programming and talks.**
 
+(Word Count - 99)
+
 ___
 
 
@@ -203,6 +233,8 @@ ___
 In five years I see myself as a senior or lead full-stack engineer owning end-to-end features and helping shape technical direction. 
 
 I want to be shipping scalable systems — particularly AI integrations — while mentoring others and improving engineering practices across the team.
+
+(Word Count - 59)
 
 ___
 
@@ -213,6 +245,8 @@ I’m motivated by solving meaningful problems that deliver business value, lear
 
 Seeing a feature go from idea to production and actually help users is especially rewarding and often leads to further improvements.
 
+(Word Count - 58)
+
 ___
 
 
@@ -221,6 +255,8 @@ ___
 I set clear boundaries, prioritise work so I focus on the highest-value tasks during the day, and make time for exercise and recovery. 
 
 I also communicate capacity with the team so we plan realistically — and when peaks happen I schedule recovery time afterwards.
+
+(Word Count - 71)
 
 ___
 
@@ -237,6 +273,8 @@ I applied that pattern to the codebase, mapped data structures to GraphQL types,
 
 _That let me deliver the functionality within the deadline and hand over maintainable code._
 
+(Word Count - 83)
+
 ___
 
 ### 20. How would your colleagues describe you?
@@ -246,6 +284,8 @@ References: Eleni, Jordan, Audrius
 Colleagues would describe me as dependable, detail-focused and collaborative — someone who raises the bar on quality while being easy to work with.
 
 They’d say I’m logical, calm under pressure, and willing to mentor others. As one colleague put it, “Steven is a great presence to have around.”
+
+(Word Count - 79)
 
 ___
 
@@ -260,5 +300,5 @@ I prepared a concise handover pack covering the architecture, deployment steps a
 
 After supporting their first releases and answering questions during the transition period, the developer was able to manage deployments independently and the handover completed without any disruption to the service.
 
-
+(Word Count - 107)
 

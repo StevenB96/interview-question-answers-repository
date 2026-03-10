@@ -12,6 +12,7 @@ For example, I’ve organised informal knowledge-sharing sessions and virtual lu
 
 Overall, I believe strong engineering teams aren’t just built on individual coding ability, but on how well people support each other and learn together.
 
+(Word Count - 128)
 
 ___
 
@@ -25,6 +26,7 @@ I evaluated three options: hosting directly on EC2, which gives full control but
 
 I recommended Elastic Beanstalk because it provided the best balance between reliability, scalability and low operational overhead. It allowed us to deploy quickly while AWS handled much of the infrastructure management, which meant the team could focus more on delivering features rather than maintaining servers.
 
+(Word Count - 124)
 
 ___
 
@@ -36,7 +38,7 @@ Practically, I break the work into smaller steps so I can maintain momentum and 
 
 This approach helps me stay consistent and maintain quality even when the work is less exciting.
 
-
+(Word Count - 112)
 
 ___
 
@@ -46,6 +48,7 @@ My ideal team culture is collaborative, supportive, and focused on continuous im
 
 I try to contribute to that culture by being approachable, communicating clearly, and helping others when I can — whether through code reviews, pairing sessions, or sharing knowledge.
 
+(Word Count - 97)
 
 ___
 
@@ -55,6 +58,7 @@ I prioritise personal development by focusing on areas that are both interesting
 
 This approach ensures my development is targeted, practical, and aligned with both my growth and the team’s needs.
 
+(Word Count - 92)
 
 ___
 
@@ -64,6 +68,7 @@ When priorities change suddenly, my first step is to understand the new goal and
 
 Then I communicate any risks or timeline impacts early. Staying flexible while keeping communication clear helps ensure the team can adapt quickly without losing track of important work.
 
+(Word Count - 128)
 
 ___
 
@@ -80,7 +85,7 @@ I created a short pull request template incorporating these guidelines so review
 As a result, review quality became more consistent across projects, onboarding new developers became easier, and the team experienced less back-and-forth during reviews.
 
 
-
+(Word Count - 147)
 
 ___
 
@@ -92,7 +97,7 @@ I use a value-versus-effort approach to identify high-impact tasks that are quic
 
 At the same time, I make sure any quick solutions are documented and modular, so they can be extended or improved later. Clear communication with the team ensures short-term decisions don’t create long-term problems.
 
-
+(Word Count - 120)
 
 ___
 
@@ -101,3 +106,5 @@ ___
 One strategic change I often recommend is improving observability. On many projects, diagnosing issues can be slow because there isn’t enough visibility into system behaviour. By adding monitoring, structured logging, and dashboards for key metrics like error rates and response times, teams can identify problems earlier, diagnose issues faster, and make more informed decisions about performance and reliability.
 
 Essentially, I focus on collecting logs, system metrics, and traces to give the team full visibility into how the system is behaving in real time.
+
+(Word Count - 107)

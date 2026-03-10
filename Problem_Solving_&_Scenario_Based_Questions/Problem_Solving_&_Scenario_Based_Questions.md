@@ -10,6 +10,8 @@ I form 2–3 plausible root-cause hypotheses and design quick tests to validate 
 
 I implement a tested fix and add unit/integration tests to prevent regression. I roll the change out safely (feature flag or canary) and monitor closely for regressions before full release.
 
+(Word Count - 123)
+
 ___
 
 
@@ -23,6 +25,8 @@ Next I’d add small, non-invasive logs or use the debugger and write tiny unit 
 
 Finally, I’d take concise notes and update docs so future onboarding is faster.
 
+(Word Count - 92)
+
 ___
 
 
@@ -34,6 +38,8 @@ I trace intermediate values with targeted logging or a debugger to see where sta
 
 If it’s a performance issue I profile hotspots and consider more efficient algorithms or data structures.
 
+(Word Count - 105)
+
 ___
 
 ### 4. What steps do you take when identifying and solving a coding error?.
@@ -43,6 +49,9 @@ When identifying and solving a coding error I reproduce the issue and gather ful
 I add targeted logs/asserts to confirm assumptions, write a failing unit test, implement the fix and run the full test suite plus integration tests. 
 
 Finally I submit the change for review, deploy via a safe rollout (feature flag/canary), monitor production and write a short post-incident note.
+
+
+(Word Count - 106)
 
 ___
 
@@ -54,6 +63,9 @@ Next I’d consider alternatives or a smaller MVP and whether an experiment can 
 
 Finally I’d define measurable acceptance criteria and monitoring, get stakeholder buy-in, and schedule it as prioritised work with a clear rollout strategy (feature flags / staged release).
 
+
+(Word Count - 113)
+
 ___
 
 ### 6. How do you decide if a solution is the best approach to a problem? (Weighing pros/cons).
@@ -64,6 +76,9 @@ I favour simple, well-understood approaches when benefits are comparable, and I 
 
 Finally I make the decision transparent, document the reasoning and keep a fallback plan ready.
 
+
+(Word Count - 116)
+
 ___
 
 ### 7. Explain how you would optimise an inefficient algorithm. (Profiling, improving complexity).
@@ -73,6 +88,9 @@ I’d start by measuring: add benchmarks and profile to confirm the actual slow 
 Then I’d analyse the algorithmic complexity to spot hotspots like nested loops, repeated computations or unnecessary recursion. I’d replace inefficient data structures with appropriate ones (hash maps, heaps, tries), apply memoisation, caching or precomputation where applicable, and reduce work by removing unnecessary copies or extra iterations—processing elements lazily/streaming where possible. If it’s CPU-bound and safe, I’d consider parallelisation or asynchronous processing. 
 
 Finally I’d re-run benchmarks and add regression tests/performance benchmarks to ensure the improvements hold.
+
+
+(Word Count - 129)
 
 ___
 
@@ -86,6 +104,9 @@ I use profilers to identify CPU hotspots and memory leaks, and I check database 
 
 Finally, I prioritise bottlenecks by impact versus cost, apply targeted optimisations, and re-measure to ensure improvements hold.
 
+
+(Word Count - 129)
+
 ___
 
 ### 9. What techniques do you use to test and validate your code? (Unit tests, integration tests).
@@ -94,6 +115,9 @@ I follow the test pyramid: many fast unit tests, focused integration tests, and 
 
 I also rely on code review and pair programming for quality and knowledge sharing, and maintain regression tests for reported bugs while adding monitoring and health checks in production.
 
+
+(Word Count - 108)
+
 ___
 
 ### 10. What would you do if a production issue occurred during off-hours? / How would you approach a system outage or critical failure?
@@ -101,6 +125,9 @@ ___
 I acknowledge the incident promptly and follow the runbook or escalation policy. I perform a preliminary assessment to determine severity and quickly implement the safest mitigation, such as a rollback, feature flag, or failover. I keep concise, regular updates to stakeholders and the incident channel, prioritising service restoration before deep diagnosis. 
 
 After stabilisation, I perform a blameless postmortem, implement fixes, and update runbooks and alerts to prevent similar issues in the future.
+
+
+(Word Count - 108)
 
 ___
 
@@ -112,6 +139,8 @@ Next, I would perform a preliminary assessment to determine severity, create an 
 
 Finally, I would communicate to affected stakeholders per policy and update threat models, tests, and monitoring to prevent similar issues.
 
+(Word Count - 112)
+
 ___
 
 ### 12. How do you stay calm and focused when debugging under pressure?
@@ -122,6 +151,8 @@ I prioritise restoring service with minimal risk through quick mitigation before
 
 Throughout the process, I communicate clearly and frequently so stakeholders’ expectations are managed.
 
+(Word Count - 97)
+
 ___
 
 ### 13. How do you approach optimising a slow-loading web page?
@@ -131,6 +162,8 @@ I start by measuring real user and lab metrics such as First Contentful Paint, L
 I then optimise the critical rendering path by deferring or asynchronously loading non-critical JavaScript, inlining critical CSS, and minimising render-blocking resources. I optimise assets through responsive images, modern formats, and compression, and use caching and a CDN for static assets alongside server-side improvements like compression and caching. I also lazy-load below-the-fold content and reduce third-party scripts to improve perceived speed. 
 
 Finally, I monitor performance to validate improvements across devices and geographies.
+
+(Word Count - 122)
 
 ___
 
@@ -146,6 +179,8 @@ I collected metrics on task completion time, accuracy, and subjective satisfacti
 
 Based on these results, we chose layout B for rollout, documented the rationale, and monitored adoption post-launch to confirm continued efficiency and accuracy.
 
+(Word Count - 162)
+
 ___
 
 ### 15. Tell me about a project where you had to think creatively to solve a problem.
@@ -157,3 +192,5 @@ I was tasked with implementing a tutorial feature that walked users through a st
 I proposed two creative approaches: first, using complex styling calculations based on screen dimensions to dynamically position elements; second, implementing an optimisation function to find free space and calculate the shortest path for arrows between elements. I quickly validated both approaches on multiple devices, tracking alignment accuracy and performance. 
 
 Ultimately, the optimisation approach was chosen, providing consistent alignment across screens, improving the tutorial’s usability, and reducing styling maintenance. This taught me how to combine creative problem-solving with quick prototyping and rigorous testing to deliver a scalable solution under constraints.
+
+(Word Count - 150)
