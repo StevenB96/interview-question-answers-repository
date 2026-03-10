@@ -130,7 +130,7 @@ _We resolved it with benchmarks, documentation and a pragmatic compromise._
 
 ___
 
-### 10. How do you receive and act on feedback?
+### 10. How do you receive and act on feedback? / How do you handle feedback or criticism from peers/managers?
 
 Project references: ai_tool-risk_mitigation-demo-project, obs-etl-k8s-demo-project
 
@@ -138,7 +138,7 @@ Project references: ai_tool-risk_mitigation-demo-project, obs-etl-k8s-demo-proje
 
 After interviews I received two pieces of feedback: I needed more exposure to production debugging and more concrete, impact-focused examples. 
 
-I built two projects: an Observability & ETL demo to practise deployment and monitoring, and a secure AI integration demo plus an interview Q&A repo to surface concrete examples. 
+I built two projects: an Observability & ETL demo to practise deployment and monitoring, and a secure AI integration demo plus an interview Q&A repo to surface concrete examples. I also created a repository for recording my imppact-focused experience.
 
 **I set success criteria, sought peer review and iterated — feedback became a measurable improvement loop.**
 
