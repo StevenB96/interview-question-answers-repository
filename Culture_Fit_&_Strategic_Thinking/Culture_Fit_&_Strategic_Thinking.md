@@ -2,63 +2,83 @@
 
 ___
 
-### 1. What do you think you can contribute to our team outside of coding?
+### 1. What do you think you can contribute to our team outside of coding? ✔
 
-Outside of coding, I contribute through collaboration and knowledge sharing. I enjoy helping teammates think through technical problems, reviewing code thoughtfully, and sharing useful tools or learning resources. I make a point of turning ad-hoc learnings into shareable artifacts so knowledge scales beyond one-on-one conversations.
+Project reference: ACF
 
-I also try to contribute to a positive team culture. I make a deliberate effort to build strong working relationships and encourage open discussion during problem-solving. That attention to culture reduces friction and helps the team reach consensus faster when decisions are needed.
+Outside of coding, I contribute through collaboration and knowledge sharing. I enjoy helping teammates think through technical problems, reviewing code thoughtfully, and sharing useful tools or learning resources. I make a point of turning ad-hoc learnings into shareable artifacts.
 
-For example, I’ve organised informal knowledge-sharing sessions and virtual lunch meetups to help maintain team cohesion, particularly in remote environments. Those sessions help surface recurring questions and accelerate onboarding, which ultimately lets the team spend more time delivering features.
+**For example**, on a project (codename ACF) I had to debug SQL syntax issues. My solution was to implement a flexible database driver package. Subsequently, this I updated the knowledge base and the boilerplate code.
+
+I also try to contribute to a positive team culture. I make a deliberate effort to build encourage open discussion during problem-solving and strong working relationships. That attention to culture reduces friction and helps the team reach consensus faster when decisions are needed.
+
+**For example**, I’ve organised informal knowledge-sharing sessions and virtual lunch meetups to help maintain team cohesion, particularly in remote environments.
 
 ___
 
-### 2. How do you stay motivated when working on tedious tasks?
+### 2. How do you stay motivated when working on tedious tasks? ✔
+
+Project reference: LLL
 
 When I’m working on a tedious task, I try to focus on the value it delivers rather than the repetition itself. I remind myself how the task contributes to the larger goal — whether that’s improving system reliability, enabling another feature, or removing manual work later. Framing the work this way keeps the end benefit visible and makes the task feel purposeful.
 
-Practically, I break the work into smaller steps so I can maintain momentum and see progress. I’ll sometimes use small techniques like listening to music or taking short breaks to stay focused, but I often find that once I get into the flow of the task, the work becomes much more engaging and the sense of progress keeps me motivated. I also treat repetitive tasks as opportunities to identify automation potential.
+**For example**, on a project (codename LLL) I decided to refactor the React codebase from class commponents to functions and hooks. This was a necessary change, but a highly repetitive task. Throughout I kept in mind the benefits: simplicity, reusabilty, performance, etc.
 
-When I spot automation opportunities I prototype a small script or pipeline that eliminates recurring manual effort. Over time this approach reduces repetitive work for the team and increases the time available for higher-value engineering.
+Practically, I break the work into smaller steps so I can maintain momentum and see progress. **For example**, I was a able to breakdown the work by component heirachies e.g. screens -> containers -> elements -> components -> etc.
+
+I’ll sometimes use small techniques like listening to music or taking short breaks to stay focused, but I often find that once I get into the flow of the task, the work becomes much more engaging and the sense of progress keeps me motivated. 
+
+I also treat repetitive tasks as opportunities to identify potential for reusability or automation. **For example**, I while I was refactoring the code, I noticed that the screen size variable was required on multiple screens, so I abstracted it into a hook and updated the knowledge base and the boilerplate code.
 
 ___
 
-### 3. What is your ideal team culture, and how do you fit into it?
+### 3. What is your ideal team culture, and how do you fit into it? ✔
+
+Project reference: N/a
 
 My ideal team culture is collaborative, supportive, and focused on continuous improvement. I value teams where people feel comfortable asking questions, sharing ideas, and giving constructive feedback. In that environment, engineers can learn from each other and build better solutions.
 
 I try to contribute to that culture by being approachable, communicating clearly, and helping others when I can — whether through code reviews, pairing sessions, or sharing knowledge. I make a deliberate effort to give feedback that’s specific and actionable so reviews become teaching moments rather than gates.
 
-I also work to create opportunities for low-risk experiments and retrospectives so the team can iterate on process and technical approaches. That approach helps the team improve predictably over time while keeping morale high.
+I also work to get stakesholder buy in for learning oppertunities, low-risk experiments and retrospectives so the team can iterate on process and technical approaches. That approach helps the team evolve ideas over time while keeping morale high.
 
 ___
 
-### 4. Describe how you prioritise your personal development.
+### 4. Describe how you prioritise your personal development. ✔
 
-I prioritise personal development by focusing on areas that are both interesting and relevant to the systems I’m working on. I also pay close attention to feedback from colleagues and interviews, using it to identify skills or gaps that will have the most impact on my work. That keeps learning practical rather than purely theoretical.
+Project reference: ai_tool-risk_mitigation-demo-project
 
-This approach ensures my development is targeted, practical, and aligned with both my growth and the team’s needs. I set small, achievable goals and combine hands-on practice with curated learning resources so I can apply new skills quickly.
+I prioritise personal development by focusing on areas that are both interesting and relevant to the systems I’m working on. I also pay close attention to feedback from colleagues and interviews, and seek mentorship. This helps me to keep my contributions aligned with what the team actually needs rather than what’s simply interesting. 
 
-I also seek mentorship and try to apply new techniques directly to production problems, which helps me verify value and adjust priorities. Over time this keeps my contributions aligned with what the team actually needs rather than what’s simply interesting.
+**For example**, after reaching the interview stage for a recent job application, I asked if there were specific topics they'd like to discuss. They wanted to focus on AI integrations relevant to their business, so that I could focus my preperation 
 
-___
+Then I set small, achievable goals and combine hands-on practice with curated learning resources so I can apply new skills quickly. I also try to apply new techniques directly to production problems, which helps me verify value and adjust priorities. This approach ensures my development is both theoretical and practical.
 
-### 5. How would you handle a situation where priorities change suddenly?
-
-When priorities change suddenly, my first step is to understand the new goal and how it affects the current work. I review what tasks are in progress, identify what can be paused or adjusted, and clarify the most important deliverables with the team or project lead. That quick clarity prevents wasted effort on low-priority work.
-
-Then I communicate any risks or timeline impacts early. I update stakeholders with a short summary of trade-offs, revise estimates, and reassign or reprioritise tasks as required. I also make sure paused items are captured with context so resuming them later is straightforward.
-
-Staying flexible while keeping communication clear helps ensure the team can adapt quickly without losing track of important work. This minimises rework and helps leadership make informed trade-offs that preserve business value.
+**For example**, in response to their feedback, I created an "ai_tool-risk_mitigation-demo-project," dividing it into manageable work packages and combining documentation review with coding to develop a user-friendly web server that demonstrates my hands-on skills.
 
 ___
 
-### 6. How do you balance short-term deadlines with long-term project goals?
+### 5. How would you handle a situation where priorities change suddenly? ✔
 
-I balance short-term deadlines with long-term goals by combining prioritisation with strategic planning. I use a value-versus-effort approach to identify high-impact tasks that are quick wins, but I also respect deadlines and adjust priorities when necessary. That lets us deliver immediate value without losing sight of the architecture.
+Project reference: BD
 
-I check for blockers and dependencies, and group related work to reduce duplicated effort. When quick solutions are needed, I make them modular and document assumptions so future improvements are easier. I also capture technical debt as explicit tickets with owners and timelines to ensure it doesn’t become forgotten.
+When priorities change suddenly, my first step is to understand the new goal and how it affects the current work. I review the tasks already in progress and identify what can be paused, adjusted, or continued so the team can focus on the highest-value work.
 
-Clear communication with the team ensures short-term decisions don’t create long-term problems. By treating short-term work as part of a larger roadmap, we preserve velocity while keeping the system maintainable.
+**For example**, on a project (codename BD), the client’s crowdfunding resources were starting to run low, so they asked us to prioritise delivering packages related to the platform’s essential functionality. I reviewed the backlog and current work and found a high-effort, medium-value game feature in development, several essential packages still pending, and multiple bug fixes at different stages of the development lifecycle.
+
+Then I update stakeholders with a short summary of the trade-offs and clarify the most important deliverables. I also make sure paused work is documented with enough context to resume later. This approach helps the team adapt quickly while keeping delivery focused on the most critical functionality.
+
+**For example**, following discussion, we paused the game feature but continued work on the bug fixes and essential packages, in that order.
+
+___
+
+### 6. How do you balance short-term deadlines with long-term project goals? ✔
+
+For my general prioritisation approach, please see “How do you prioritise tasks when given multiple priorities?”.
+
+If a short-term deadline conflicts with long-term project goals, I first assess whether the immediate requirement is truly time-critical or whether there is flexibility in scope or delivery. When a quick solution is needed, I aim to keep it modular and document assumptions so that future improvements or refactoring are easier. I also capture any technical debt as explicit tickets with owners and tentative timelines so it doesn’t become forgotten.
+
+Clear communication with the team helps ensure short-term decisions don’t create long-term problems. By treating short-term work as part of a larger roadmap, we preserve delivery momentum while still keeping the system maintainable and easier to evolve over time.
 
 ___
 

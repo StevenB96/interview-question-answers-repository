@@ -126,15 +126,15 @@ I set success criteria, sought peer review and iterated — feedback became a me
 
 ___
 
-### 11. How do you prioritise tasks when given multiple priorities?
+### 11. How do you prioritise tasks when given multiple priorities? ✔
 
-**I use a value/effort baseline then apply pragmatic checks: hard deadlines, blockers, resource availability and dependencies.**
+Project references: N/a
 
-I use a value/effort baseline then apply pragmatic checks: hard deadlines, blockers, resource availability and dependencies. I prioritise high-value, low-effort tasks but allow deadlines to bump items when necessary. The goal is to maximise impact while keeping commitments realistic.
+I start by estimating impact versus effort, often using frameworks like RICE or the Eisenhower matrix, to identify high-value work. In general, I prioritise tasks that deliver the greatest value for the least effort, but I also allow hard deadlines or operational needs to adjust the order when necessary. The goal is to maximise impact while keeping commitments realistic and achievable.
 
-I check for blockers (credentials, third-party issues, or a subject-matter expert) and group related tasks to reduce duplicated effort. Grouping lowers overhead and often shortens total delivery time for clustered changes.
+Next, I apply some pragmatic checks around dependencies and blockers. These can include missing credentials, third-party services, resource constraints, or the availability of subject-matter experts. Identifying these early helps avoid stalled work. Where possible, I also group related tasks together to reduce context switching and maintain momentum.
 
-Finally, I communicate the proposed prioritisation to stakeholders and re-evaluate regularly as new information arrives. That keeps expectations aligned and reduces rework from misaligned priorities.
+Finally, I communicate the proposed prioritisation to get stakeholder buy-in. I revisit priorities regularly as new information or requirements emerge. This approach keeps the team focused on the most valuable work, helps avoid unnecessary rework, and ensures priorities remain aligned with project goals.
 
 ___
 
