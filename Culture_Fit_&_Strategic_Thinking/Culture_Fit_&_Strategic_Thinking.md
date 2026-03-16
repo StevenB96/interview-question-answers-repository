@@ -106,7 +106,7 @@ As a result, review quality became more consistent across projects, onboarding n
 
 ___
 
-### 9. Give an example of a difficult decision you made in a past project.
+### 9. Give an example of a difficult decision you made in a past project. ✔
 
 Project reference: PB
 
