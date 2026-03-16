@@ -74,7 +74,7 @@ ___
 
 ### 6. How do you balance short-term deadlines with long-term project goals? ✔
 
-For my general prioritisation approach, please see “How do you prioritise tasks when given multiple priorities?”.
+For my general prioritisation approach, please see **“How do you prioritise tasks when given multiple priorities?”**.
 
 If a short-term deadline conflicts with long-term project goals, I first assess whether the immediate requirement is truly time-critical or whether there is flexibility in scope or delivery. When a quick solution is needed, I aim to keep it modular and document assumptions so that future improvements or refactoring are easier. I also capture any technical debt as explicit tickets with owners and tentative timelines so it doesn’t become forgotten.
 
@@ -82,23 +82,25 @@ Clear communication with the team helps ensure short-term decisions don’t crea
 
 ___
 
-### 7. Describe a strategic change you would recommend for a project or product.
+### 7. Describe a strategic change you would recommend for a project or product. ✔
 
-One strategic change I often recommend is improving observability. On many projects, diagnosing issues can be slow because there isn’t enough visibility into system behaviour. By adding monitoring, structured logging, and dashboards for key metrics like error rates and response times, teams can identify problems earlier, diagnose issues faster, and make more informed decisions about performance and reliability.
+Project reference: obs-etl-k8s-demo-project
 
-Essentially, I focus on collecting logs, system metrics, and traces to give the team full visibility into how the system is behaving in real time. I recommend rolling this out incrementally — instrument critical paths first, create actionable dashboards, and build runbooks to ensure alerts translate to quick remediation.
+One strategic improvement I often recommend is adopting a microservice architecture deployed on a container orchestration platform such as Kubernetes. This provides key operational capabilities including automated deployment, service discovery, fault isolation, horizontal scaling, and strong observability when integrated with monitoring and tracing stacks (e.g., Prometheus and OpenTelemetry).
 
-This approach shortens incident diagnosis, reduces user impact, and makes it easier to prioritise engineering effort based on measurable system health rather than guesswork.
+**For example**, this approach is demonstrated in my project obs-etl-k8s-demo-project. In this implementation, I containerised a Python Flask application and deployed it to a Kubernetes cluster using a declarative infrastructure-as-code approach. Kubernetes manages the lifecycle of the service, using internal DNS-based service discovery and readiness probes to ensure reliable routing of network traffic between components. To support the observability capabilities described above, the project integrates a full monitoring and tracing stack. The Flask application uses OpenTelemetry to export distributed traces to a centralised Jaeger instance, while application and system metrics are scraped by Prometheus via a ServiceMonitor.
+
+Together, these components transform a simple application into a resilient, observable, and scalable system where developers can trace the journey of a single transaction and operate distributed services with the visibility required to scale safely.
 
 ___
 
-### 8. Tell me about a time you initiated a process improvement.
+### 8. Tell me about a time you initiated a process improvement. ✔
 
 Project reference: LLL
 
-While working on a project, I noticed that code reviews were quite inconsistent. Sometimes reviewers focused on style, while other times they focused on architecture or implementation details. Without a shared framework, the outcome of a review could vary significantly between developers or projects.
+While working on a project (codename LLL), I noticed that code reviews were quite inconsistent. Sometimes reviewers focused on style, while other times they focused on architecture or implementation details. Without a shared framework, the outcome of a review could vary significantly between developers or projects.
 
-To improve this, I suggested introducing a lightweight code review checklist covering tests, edge cases, security considerations, performance, and documentation. I also proposed a simple severity key so reviewers could distinguish between critical issues and personal preferences, helping keep feedback constructive. I then created a short pull request template incorporating these guidelines so reviewers had a consistent structure to follow.
+**To improve this**, I suggested introducing a lightweight code review checklist covering tests, edge cases, security considerations, performance, and documentation. I also proposed a simple severity key so reviewers could distinguish between critical issues and personal preferences, helping keep feedback constructive. I then created a short pull request template incorporating these guidelines so reviewers had a consistent structure to follow.
 
 As a result, review quality became more consistent across projects, onboarding new developers became easier, and the team experienced less back-and-forth during reviews. The change turned subjective reviews into repeatable practice and reduced friction in the merge process.
 
@@ -106,10 +108,22 @@ ___
 
 ### 9. Give an example of a difficult decision you made in a past project.
 
-Project reference: 2PD
+Project reference: PB
 
-On the project, I needed to decide how we should host the application on AWS while keeping in mind the constraints typical for an SME — limited infrastructure resources and the need for a simple deployment process. I evaluated three options: hosting directly on EC2, which gives full control but requires managing servers; using a container platform like ECS or Kubernetes, which offers scalability but adds operational complexity; and using a managed platform such as Elastic Beanstalk.
+While working on a project (codename PB), I was tasked with integrating OAuth into our boilerplate to broaden our security offerings. The primary decision was whether to adopt a vendor solution or build a custom OAuth system.
 
-I recommended Elastic Beanstalk because it provided the best balance between reliability, scalability and low operational overhead. It allowed us to deploy quickly while AWS handled much of the infrastructure management, which meant the team could focus more on delivering features rather than maintaining servers. To make the choice safer I added monitoring and clear rollback runbooks so we could detect and respond to issues quickly.
+For my general prioritisation approach, please see **“How do you decide if a solution is the best approach to a problem? (Weighing pros/cons)”**. 
 
-The result was smoother deployments and less operational distraction for the engineering team, enabling faster feature iteration under the SME constraints we had to respect.
+I compiled a list of relevant trade-offs, including:
+> Flexibility — As a software house with a diverse client base, it was important to support a range of client requirements.
+> Security — Security is a critical consideration for any authentication system.
+> Maintainability — We needed the ability to maintain, fix, and improve the solution over time.
+> Time / cost — As this was relatively low-priority work, it was preferable to choose a solution that could be implemented quickly.
+
+Scoring both approaches against the criteria led to the following conclusions:
+> Flexibility — A custom OAuth system offers greater flexibility, especially for multi-step authentication and device linking, since most projects involved mobile, web, and backend apps.
+> Security / Compliance — Both approaches can be made secure. Vendors typically provide a faster, higher level of security out of the box, but a custom solution better supports compliance needs for finance, healthcare, and government clients.
+> Maintainability — Both approaches are similarly maintainable: vendor solutions introduce external dependencies and potential API contract issues, while a custom system requires ongoing code maintenance.
+> Time / Cost — Vendors reduce development effort and time-to-market, but a custom solution can be more cost-effective for certain clients over the long term.
+
+I chose the custom OAuth approach because flexibility and compliance were essential for most of our clients, while the other criteria were roughly balanced. I communicated the decision to stakeholders to secure buy-in, documented the reasoning, and put a fallback plan in place to adopt a vendor solution later if needed.
