@@ -8,7 +8,7 @@ I reproduce the bug reliably and capture exact steps, inputs, environment and ti
 
 I form 2–3 plausible root-cause hypotheses and design quick tests to validate or eliminate each. I instrument selectively (targeted logs, metrics, breakpoints) so I can observe behaviour without broad, risky changes. I also consider whether a quick mitigation (feature flag, rollback) is needed to protect users while I investigate.
 
-I implement a tested fix and add unit/integration tests to prevent regression. I roll the change out safely (feature flag or canary) and monitor closely for regressions before full release. Finally, I document the root cause, the decision rationale and the follow-ups — that creates learning, reduces repeat incidents, and speeds future triage.
+I implement a tested fix and add unit/integration tests to prevent regression. I roll the change out safely (feature flag or canary) and monitor closely for regressions before full release. Finally, I document the root cause, the decision rationale and the follow-ups — that creates learning, reduces repeat incidents, and speeds future debugging.
 
 ___
 
@@ -54,13 +54,13 @@ Finally I’d define measurable acceptance criteria and monitoring, get stakehol
 
 ___
 
-### 6. How do you decide if a solution is the best approach to a problem? (Weighing pros/cons).
+### 6. How do you decide if a solution is the best approach to a problem? (Weighing pros/cons). ✔
 
-I'd start by listing clear evaluation criteria — correctness, performance, reliability, security, maintainability, time-to-ship and cost — then score each candidate solution against those criteria to expose trade-offs. Making the criteria explicit helps align the team on what matters most for the problem at hand.
+I start by defining clear evaluation criteria such as flexibility, performance, reliability, security, maintainability, time-to-ship, and cost. I then score each candidate solution against these criteria to highlight the key trade-offs. Making the criteria explicit helps ensure the decision-making process aligns with the team’s goals and constraints.
 
-I favour simple, well-understood approaches when benefits are comparable, and I explicitly factor in long-term operational costs like tech debt, monitoring and on-call load. If uncertainty is high I build a small prototype or spike to gather data, and I consult stakeholders and teammates to align goals. Prototyping reduces guesswork and provides measurable evidence.
+Next, I prioritise the most important criteria. If there is no clear differentiator, I consider secondary factors such as technical debt, observability and monitoring, and potential on-call or operational load. When uncertainty is high, I may build a small prototype or spike to gather data, and I consult stakeholders and teammates to ensure alignment. Prototyping helps reduce guesswork and provides measurable evidence.
 
-Finally I make the decision transparent, document the reasoning and keep a fallback plan ready. That way, if the chosen approach underperforms, we can pivot quickly with minimal disruption and a clear audit trail of why decisions were made.
+Finally, I make the decision transparent by documenting the reasoning and keeping a fallback plan ready. This ensures that if the chosen approach underperforms, the team can pivot quickly with minimal disruption and a clear record of why the decision was made.
 
 ___
 

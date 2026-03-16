@@ -56,15 +56,17 @@ It showed I could own both technical design and team delivery end-to-end. I aim 
 ___
 
 
-### 5. What is the hardest problem you’ve solved, and how did you solve it? / Describe a time you faced a significant challenge and how you overcame it?
+### 5. What is the hardest problem you’ve solved, and how did you solve it? / Describe a time you faced a significant challenge and how you overcame it? ✔
 
 Project references: obs-etl-k8s-demo-project
 
-On an observability/ETL demo an Airflow container refused to start and a downstream service broke. Logs hinted at a Redis/version mismatch, but changing the Redis env var didn’t fix it. I systematically ruled out causes: inspected logs, tried config changes, searched GitHub and Stack Overflow, and used LLM tools for additional ideas. That method kept the investigation structured.
+For my general debugging approach, please see **"How do you go about troubleshooting a complex bug? (Walk through your process).”**. 
 
-Eventually I audited image tags and discovered upstream image availability/policy issues and migrated to the community image. The deployment then succeeded. Rather than guessing, I followed methodical elimination and changed the image source when evidence pointed there.
+**For example**, on my project obs-etl-k8s-demo-project, an Airflow container refused to start and a downstream service broke. The logs suggested a Redis version mismatch, but changing the Redis environment variable did not resolve the issue. I approached the problem methodically: inspecting logs, testing configuration changes, searching GitHub and Stack Overflow, and using LLM tools to explore additional hypotheses. This helped keep the investigation structured.
 
-The key was methodical elimination, targeted research and being willing to change the image source. The experience reinforced disciplined debugging and the value of verifying assumptions early to reduce time-to-recovery.
+The main challenges were that the problem could not easily be reproduced or reduced to a smaller test case, there was no clear breaking change to identify, and none of the investigated solutions resolved the issue or pointed clearly to the root cause, which slowed progress.
+
+Eventually, I audited the container image tags and discovered an upstream image availability/policy issue. I resolved the problem by migrating to the community-maintained image. The experience reinforced the value of systematic debugging, persistent research, and validating key assumptions—such as image availability and validity—early in the process to reduce time-to-recovery.
 
 ___
 
