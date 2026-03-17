@@ -34,8 +34,6 @@ ___
 
 ### 3. What is your ideal team culture, and how do you fit into it? ✔
 
-Project reference: N/a
-
 My ideal team culture is collaborative, supportive, and focused on continuous improvement. I value teams where people feel comfortable asking questions, sharing ideas, and giving constructive feedback. In that environment, engineers can learn from each other and build better solutions.
 
 I try to contribute to that culture by being approachable, communicating clearly, and helping others when I can — whether through code reviews, pairing sessions, or sharing knowledge. I make a deliberate effort to give feedback that’s specific and actionable so reviews become teaching moments rather than gates.
@@ -115,15 +113,15 @@ While working on a project (codename PB), I was tasked with integrating OAuth in
 For my general prioritisation approach, please see **“How do you decide if a solution is the best approach to a problem? (Weighing pros/cons)”**. 
 
 I compiled a list of relevant trade-offs, including:
-> Flexibility — As a software house with a diverse client base, it was important to support a range of client requirements.
-> Security — Security is a critical consideration for any authentication system.
-> Maintainability — We needed the ability to maintain, fix, and improve the solution over time.
-> Time-to-ship / cost — As this was relatively low-priority work, it was preferable to choose a solution that could be implemented quickly.
+- Flexibility — As a software house with a diverse client base, it was important to support a range of client requirements.
+- Security — Security is a critical consideration for any authentication system.
+- Maintainability — We needed the ability to maintain, fix, and improve the solution over time.
+- Time-to-ship / cost — As this was relatively low-priority work, it was preferable to choose a solution that could be implemented quickly.
 
 Scoring both approaches against the criteria led to the following conclusions:
-> Flexibility — A custom OAuth system offers greater flexibility, especially for multi-step authentication and device linking, since most projects involved mobile, web, and backend apps.
-> Security / Compliance — Both approaches can be made secure. Vendors typically provide a faster, higher level of security out of the box, but a custom solution better supports compliance needs for finance, healthcare, and government clients.
-> Maintainability — Both approaches are similarly maintainable: vendor solutions introduce external dependencies and potential API contract issues, while a custom system requires ongoing code maintenance.
-> Time-to-ship / Cost — Vendors reduce development effort and time-to-market, but a custom solution can be more cost-effective for certain clients over the long term.
+- Flexibility — A custom OAuth system offers greater flexibility, especially for multi-step authentication and device linking, since most projects involved mobile, web, and backend apps.
+- Security / Compliance — Both approaches can be made secure. Vendors typically provide a faster, higher level of security out of the box, but a custom solution better supports compliance needs for finance, healthcare, and government clients.
+- Maintainability — Both approaches are similarly maintainable: vendor solutions introduce external dependencies and potential API contract issues, while a custom system requires ongoing code maintenance.
+- Time-to-ship / Cost — Vendors reduce development effort and time-to-market, but a custom solution can be more cost-effective for certain clients over the long term.
 
 I chose the custom OAuth approach because flexibility and compliance were essential for most of our clients, while the other criteria were roughly balanced. I presented my recommendation and decision-making process to stakeholders to obtain their buy-in, documented the rationale, and established a contingency plan to adopt a vendor solution later if necessary.

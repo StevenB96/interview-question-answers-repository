@@ -5,7 +5,7 @@ _Italics = Reflection_
 
 ___
 
-### 1. Tell me about yourself. (Give a concise personal introduction).
+### 1. Tell me about yourself. (Give a concise personal introduction). ✔
 
 Hi — I’m Steven, a full-stack developer with three years’ consulting experience and a master’s in engineering. I’ve delivered end-to-end web and mobile solutions — from API design and databases to frontend UX and deployment. I communicate across disciplines and enjoy owning work from concept through production.
 
@@ -15,18 +15,18 @@ I’m looking to join a team where I can own features end-to-end and help delive
 
 ___
 
-### 2. Why do you want to be a software/full-stack developer?
+### 2. Why do you want to be a software/full-stack developer? ✔
 
-I became a full-stack developer because software combines everything I enjoy about engineering: problem solving, systems thinking and fast feedback loops. My background exposed me to multiple engineering disciplines, but software lets me prototype solutions quickly and measure real impact. I enjoy connecting product needs to technical solutions in a tangible way.
+I became a full-stack developer because software brings together the parts of engineering I enjoy most: problem solving, systems thinking, and especially rapid feedback loops. My multidisciplinary engineering background lets me prototype solutions quickly and measure real impact, so I can translate product needs into practical technical solutions.
 
-In my last role I led a UX demo that cut customer queries by 31% and built an ETL pipeline that removed manual syncing. Those outcomes showed me how design and engineering together can reduce support load and free time for higher-value work. I like work that produces clear business impact.
+I enjoy both implementing clear requirements and using my systems knowledge to suggest improvements. **For example**, I’ve led initiatives that reduced customer queries by 31% and eliminated the need for manual data entry — outcomes that reinforced my belief I can use initiative to deliver measurable business impact.
 
-I enjoy working across teams to turn customer needs into robust code and I want to continue doing that here. I aim to bring practical cross-stack skills that speed delivery and reduce friction between product, design, and ops.
+Beyond technical fundamentals, I’m keen to work across cross-functional teams, which is integral to great software. I find satisfaction in partnering with others to overcome challenges, remove blockers, and ensure solutions align with product, design, and operations to speed delivery and reduce friction.
 
 ___
 
 
-### 3. What are your greatest strengths and weaknesses?
+### 3. What are your greatest strengths and weaknesses? ✔
 
 <u>Strengths</u>
 
@@ -43,15 +43,17 @@ Judging the right level of documentation — While documentation is important fo
 ___
 
 
-### 4. Describe your biggest professional achievement to date.
+### 4. Describe your biggest professional achievement to date. ✔
 
-Project references: Oman FM
+Project references: OFM
 
-My biggest achievement was leading the stage-one delivery of a mobile app and admin portal. I translated stakeholder needs into a prioritised backlog, designed a resilient data model and an automated ETL to sync WordPress content, and mentored two juniors through paired programming and code reviews. I acted as a technical owner across design, backend, and deployment.
+My biggest achievement was leading the stage-one delivery of a project (codename OFM), which delivered a mobile app and an admin portal. The work required location services, push notifications, and integrating WordPress as the authoritative source for location and news content.
 
-We delivered the MVP, the client commissioned follow-on work, and the juniors became productive contributors. That outcome demonstrated both delivery capability and team uplift: the product moved forward and the engineers I mentored started shipping independently.
+Technically, I designed a robust data model and implemented a Python ETL and data-normalisation script that synchronises CMS content via its API and runs automatically as a cron job. I drafted a technical options document for complex business logic and led a face-to-face session with the customer and team to agree a pragmatic solution. 
 
-It showed I could own both technical design and team delivery end-to-end. I aim to replicate that pattern — delivering working products while raising the team’s capability so future phases move faster and with less oversight.
+From a teamwork and delivery perspective, I decomposed features into clear work packages, estimated tasks, and coordinated delivery through sprint routines and daily scrums. I mentored two junior engineers through pair programming, daily check-ins and structured code reviews to accelerate their ramp-up and ensure consistent code quality, and I maintained standards through pull requests, paired sessions and acceptance-testing workflows.
+
+We delivered the MVP, the client commissioned follow-on work, and the junior developers became productive contributors. This demonstrated my ability to own technical design, deliver on time, and mentor others to the point where they could ship independently.
 
 ___
 
@@ -70,43 +72,45 @@ Eventually, I audited the container image tags and discovered an upstream image 
 
 ___
 
-### 6. Tell me about a time you failed or received criticism and what you learned.
+### 6. Tell me about a time you failed or received criticism and what you learned. ✔
 
-Project references: Barnfield Caravans
+Project references: BC
 
-Early in my career I implemented multiple form features at once to be efficient, but that caused an overrun on the first ticket. Because the client had Kanban access, their confidence dropped and they paused the project. I was told I should have consulted stakeholders before deviating from the ticket approach.
+Early in my career, on a project (codename BC), I bundled several form features together to be efficient, which caused scope creep and made the first ticket overrun. Because the client had Kanban access and could see progress, their confidence dropped and they paused the project. I was told I should have consulted stakeholders before deviating from the agreed ticket-by-ticket approach.
 
-I learned that transparency and alignment are as important as efficiency. Since then I raise proposed deviations early, update the backlog with the team before changing course, and ensure stakeholders are informed when we change scope or approach.
+I realised I’d treated hard sprint deadlines as the only constraint and hadn’t confirmed I had the freedom to change the planned approach. 
 
-Now I raise proposed deviations early and update the backlog with the team before changing course. This practice preserves trust and avoids surprises, while keeping efficiency improvements visible and agreed.
-
-___
-
-### 7. How do you handle tight deadlines or stressful situations?
-
-Project references: Bare Dating
-
-I focus on three things: prioritisation, breaking work into manageable tasks, and clear communication. I identify the highest-value deliverables, decompose them into small tasks, and keep the team and stakeholders updated so blockers are visible. That clarity helps us decide what to cut or defer when time is limited.
-
-For example, when a client publicly announced features before they were ready, we prioritised the demo-critical items, ran quick check-ins, and kept the client informed. That allowed us to deliver the essentials without surprises and protected our credibility.
-
-The approach reduces context-switch cost, keeps morale steady under pressure, and ensures the team delivers the highest-impact work within the deadline.
+I learned that transparency and alignment are as important as efficiency. Since then I surface proposed deviations early to get stakeholder buy-in, update the backlog with the team before changing course, and ensure stakeholders are informed whenever we change scope or approach. That practice preserves trust and prevents surprises.
 
 ___
 
-### 8. Give an example of working effectively under pressure.
+### 7. How do you handle tight deadlines or stressful situations? ✔ — similar to "How would you handle a situation where priorities change suddenly"?
+
+Project references: BD
+
+I begin with prioritisation of features. For my general prioritisation approach, please see **“How do you prioritise tasks when given multiple priorities?”**. 
+
+With priorities set, I break features into small, testable tasks, timebox work where useful, and keep the team and stakeholders updated so blockers surface early and decisions about scope are clear. That shared visibility makes it straightforward to decide what to cut or defer when time is limited.
+
+On a project (codename BD), the client repeatedly announced features publicly before they were ready, so I focused the team on demo-critical items, ran frequent internal check-ins, and kept the client informed about progress and trade-offs. By concentrating on the essentials and maintaining tight feedback loops, we delivered what mattered for the demo without surprises and preserved our credibility.
+
+This approach helps keep morale steady under pressure and ensures the team delivers the highest-impact work within the deadline.
+
+___
+
+### 8. Give an example of working effectively under pressure. ✔
 
 Project references: ACF
 
-I had a “poison-chalice” project where I was the primary developer and had to reverse-engineer the domain from code because migrations wouldn’t run. I learned Node.js and GraphQL quickly, instrumented the code to trace data flows, and produced an ERD to clarify structure. I also organised customer sessions to validate assumptions.
+I inherited a “poison-chalice” as the primary developer on a project (codename ACF) where database migrations would not run, meaning I had to reverse-engineer the domain from the codebase while still delivering features. In situations like this, I rely on a consistent process: focused rapid learning, structured investigation and instrumentation, and proactive stakeholder communication.
 
-Despite runtime and SQL compatibility issues, I delivered the features and the domain report so the team could continue. The deliverable removed a major blocker and allowed others to pick up work with clear documentation.
+I quickly learned Node.js and GraphQL, instrumented the application to trace data flows, and produced an entity–relationship diagram (ERD) to clarify the domain structure. I also organised customer sessions to validate assumptions and fill gaps in understanding. By diagnosing and resolving runtime and SQL compatibility issues, I was able to get the system running again, deliver the required features, and produce a domain report so the team could continue development.
 
-The lesson: rapid learning + structured investigation + proactive stakeholder communication lets you succeed when you’re under pressure. This combination reduced downtime and kept the project moving forward.
+These deliverables removed a major blocker and allowed other developers to pick up work with clear documentation and minimal ramp-up. Having a structured plan helped me stay confident I was on track and enabled me to perform effectively under pressure.
 
 ___
 
-### 9. Describe a conflict you had with a teammate and how you resolved it.
+### 9. Describe a conflict you had with a teammate and how you resolved it. ✔
 
 I inherited a module refactored into a large pure-SQL query, with no tests or notes. The author argued it was faster; I argued it reduced readability and maintainability. We both had valid concerns: performance vs clarity.
 
@@ -129,8 +133,6 @@ I set success criteria, sought peer review and iterated — feedback became a me
 ___
 
 ### 11. How do you prioritise tasks when given multiple priorities? ✔
-
-Project references: N/a
 
 I start by estimating impact versus effort, often using frameworks like RICE or the Eisenhower matrix, to identify high-value work. In general, I prioritise tasks that deliver the greatest value for the least effort, but I also allow hard deadlines or operational needs to adjust the order when necessary. The goal is to maximise impact while keeping commitments realistic and achievable.
 
