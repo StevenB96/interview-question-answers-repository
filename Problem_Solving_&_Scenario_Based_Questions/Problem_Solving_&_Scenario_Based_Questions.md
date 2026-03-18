@@ -2,59 +2,56 @@
 
 ___
 
-### 1. How do you go about troubleshooting a complex bug? (Walk through your process).
+### 1. How do you go about troubleshooting a complex bug? (Walk through your process) ✔
 
-I reproduce the bug reliably and capture exact steps, inputs, environment and timestamps. I collect immediate evidence — logs, stack traces, metrics, error rates — and check recent deploys/config changes, then reduce scope by isolating the smallest possible repro. Reproducing reliably ensures we’re fixing the real problem and prevents guessing.
-
-I form 2–3 plausible root-cause hypotheses and design quick tests to validate or eliminate each. I instrument selectively (targeted logs, metrics, breakpoints) so I can observe behaviour without broad, risky changes. I also consider whether a quick mitigation (feature flag, rollback) is needed to protect users while I investigate.
-
-I implement a tested fix and add unit/integration tests to prevent regression. I roll the change out safely (feature flag or canary) and monitor closely for regressions before full release. Finally, I document the root cause, the decision rationale and the follow-ups — that creates learning, reduces repeat incidents, and speeds future debugging.
-
-___
-
-
-### 2. Explain how you would debug an unfamiliar codebase.
-
-I’d first pair with the author if possible to get quick context, then read the README/architecture docs and run the app locally to observe behaviour. Running the app early gives a practical mental model faster than purely reading code. That immediate context prevents wrong assumptions.
-
-I’d identify entry points (tests, main modules, relevant routes), use code search to follow the data flow end-to-end, and check git history/PRs for recent changes. I check the data-model as I find this gives a lot of domain knowledge. I look for small runnable units (scripts, tests) I can execute to see runtime behaviour and identify where data transforms or errors occur.
-
-Next I’d add small, non-invasive logs or use the debugger and write tiny unit tests to exercise assumptions. I take concise notes and update docs so future onboarding is faster, and I share quick findings with the team to validate understanding. The goal is practical familiarity that lets me make safe changes quickly and reduce ramp time for others.
+1. I reproduce the bug reliably and capture the exact steps, inputs, environment, and timestamps. Reproducing the issue consistently ensures we are fixing the real problem and avoids guesswork.
+2. I collect immediate evidence such as logs, stack traces, metrics, error rates, and recent deployment or configuration changes, then narrow the scope by isolating the smallest possible reproduction.
+3. I consider whether a quick mitigation is required, such as a feature flag, rollback, or temporary safeguard, to protect users while the investigation continues.
+4. I form two or three plausible root-cause hypotheses and design quick tests to confirm or eliminate each one.
+5. I instrument selectively using targeted logs, metrics, or breakpoints so I can observe behaviour without introducing broad or risky changes.
+6. Once the cause is identified, I implement a tested fix and add unit or integration tests to prevent the issue from recurring.
+7. I roll out the change safely using a feature flag or canary deployment and monitor the system closely for regressions before a full release.
+8. Finally, I document the root cause, the decision rationale, and any follow-up actions. This creates shared learning, reduces repeat incidents, and speeds future debugging.
 
 ___
 
+### 2. Explain how you would debug an unfamiliar codebase ✔
 
-### 3. What strategies do you use to debug a complex algorithm?.
-
-For debugging a complex algorithm I create minimal reproducible inputs and compare them to small, known-correct examples, then add assertions and invariants at key steps so the code self-checks. Minimal inputs highlight where logic diverges and make it easier to reason about state transitions.
-
-I trace intermediate values with targeted logging or a debugger to see where state diverges, verify edge cases, data types and numeric stability, and break the algorithm into smaller functions to unit-test each piece. Adding invariants and explicit assertions early helps catch subtle bugs quickly rather than letting errors propagate.
-
-If it’s a performance issue I profile hotspots and consider more efficient algorithms or data structures. I also validate numerical stability (rounding, overflow) and add tests for boundary values. The combination of small inputs, assertions, unit tests and profiling speeds diagnosis and reduces the chance of regressions.
-
-___
-
-### 4. What steps do you take when identifying and solving a coding error?.
-
-When identifying and solving a coding error I reproduce the issue and gather full context — exact inputs, environment, stack traces and logs — then localise the failing component by following the execution path or running module tests. A good repro is the foundation for any safe fix and prevents wasted effort.
-
-I add targeted logs/asserts to confirm assumptions, write a failing unit test, implement the fix and run the full test suite plus integration tests. That failing test documents the bug and prevents regressions. I try to keep fixes small and focused so code review is quick and clear.
-
-Finally I submit the change for review, deploy via a safe rollout (feature flag/canary), monitor production and write a short post-incident note. The post-incident note captures root cause, mitigations and actions (tests, monitoring, docs) so the team learns and the same issue is less likely to recur.
+1. I begin by pairing with the original author if possible to get quick context, then read the README and architecture documentation and run the application locally. Running the application early helps build a practical mental model faster than reading code alone and prevents incorrect assumptions.
+2. I identify the entry points such as tests, main modules, or relevant routes, then use code search to follow the data flow end-to-end. I also review the git history and pull requests for recent or related changes.
+3. I examine the data model because it often provides a large amount of domain knowledge and reveals where important logic is located.
+4. I look for small runnable units such as scripts or tests that I can execute to observe runtime behaviour and identify where data transformations or errors occur.
+5. I then add small, non-invasive logs, use the debugger, or write small unit tests to validate assumptions and confirm how the system behaves.
+6. Throughout the process I take concise notes and update documentation so future onboarding is faster, and I share early findings with the team to validate my understanding. The goal is to gain practical familiarity that allows me to make safe changes quickly while reducing ramp-up time for others.
 
 ___
 
-### 5. How would you evaluate a new feature request to decide whether to implement it?.
+### 3. What strategies do you use to debug a complex algorithm? ✔
 
-I’d first clarify the problem the feature solves and which users and metrics it targets, then check alignment with product goals and the roadmap while surfacing dependencies and risks. Understanding the intended user outcome upfront prevents building nice-but-unused features.
-
-Next I’d consider alternatives or a smaller MVP and whether an experiment can validate our core assumptions. I estimate expected impact versus implementation and ongoing maintenance effort, and use prioritisation frameworks like RICE or Eisenhower to compare options. These trade-offs make prioritisation explicit and defensible.
-
-Finally I’d define measurable acceptance criteria and monitoring, get stakeholder buy-in, and schedule it as prioritised work with a clear rollout strategy (feature flags / staged release). Delivering a small validated increment first reduces risk, provides feedback, and lets us iterate based on real usage rather than assumptions.
+- Create minimal, reproducible inputs and compare them to small, known-correct examples to reveal where logic diverges.
+- Add assertions and invariants at key steps so the code self-checks and catches errors early.
+- Trace intermediate values with targeted logging or a debugger to observe where state diverges.
+- Verify edge cases, data types, and numerical stability (rounding, overflow).
+- Break the algorithm into smaller functions and unit-test each piece to reduce reasoning complexity.
+- If performance is a concern, profile hotspots and consider more efficient algorithms or data structures.
+- Add tests for boundary values and numeric stability to prevent regressions.
 
 ___
 
-### 6. How do you decide if a solution is the best approach to a problem? (Weighing pros/cons). ✔
+### 4. How would you evaluate a new feature request to decide whether to implement it?
+
+* Clarify the problem the feature solves, the target users, and the key metrics it should move.
+* Check alignment with product goals and the roadmap; surface dependencies and risks.
+* Consider alternatives or a smaller minimum viable product and whether an experiment can validate core assumptions.
+* Estimate expected impact versus implementation and ongoing maintenance effort.
+* Use prioritisation frameworks (for example, Reach-Impact-Confidence-Effort or the Eisenhower matrix) to compare options objectively.
+* Define measurable acceptance criteria and monitoring to evaluate success after release.
+* Get stakeholder buy-in and schedule the work as prioritised with a clear rollout strategy (feature flags or staged release).
+* Deliver a small, validated increment first to reduce risk, gather feedback, and iterate based on real usage rather than assumptions.
+
+___
+
+### 5. How do you decide if a solution is the best approach to a problem? (Weighing pros/cons) *referenced ✔
 
 I start by defining clear evaluation criteria such as flexibility, performance, reliability, security, maintainability, time-to-ship, and cost. I then score each candidate solution against these criteria to highlight the key trade-offs. Making the criteria explicit helps ensure the decision-making process aligns with the team’s goals and constraints.
 
@@ -64,7 +61,7 @@ Finally, I make the decision transparent by documenting the reasoning and keepin
 
 ___
 
-### 7. Explain how you would optimise an inefficient algorithm. (Profiling, improving complexity).
+### 6. Explain how you would optimise an inefficient algorithm. (Profiling, improving complexity).
 
 I’d start by measuring: add benchmarks and profile to confirm the actual slow parts. Measurement prevents premature optimisation and focuses effort on real bottlenecks rather than perceived ones. I prefer micro-benchmarks that isolate the hot path and system-level tests to confirm end-to-end impact.
 
@@ -74,7 +71,7 @@ If it’s CPU-bound and safe, I’d consider parallelisation or asynchronous pro
 
 ___
 
-### 8. Describe your process for identifying performance bottlenecks. (Profiling tools, metrics).
+### 7. Describe your process for identifying performance bottlenecks. (Profiling tools, metrics).
 
 I start by defining clear performance goals such as p50, p95 and p99 latency, throughput, and resource limits. Explicit goals make trade-offs visible and allow us to prioritise optimisations by user impact rather than micro-optimisations.
 
@@ -84,7 +81,7 @@ Finally, I prioritise bottlenecks by impact versus cost, apply targeted optimisa
 
 ___
 
-### 9. What techniques do you use to test and validate your code? (Unit tests, integration tests).
+### 8. What techniques do you use to test and validate your code? (Unit tests, integration tests).
 
 I follow the test pyramid: many fast unit tests, focused integration tests, and a few end-to-end tests. Fast unit tests provide quick feedback loops for developers while integration and contract tests guard cross-service behaviour. That balance keeps CI fast and confidence high.
 
@@ -94,7 +91,7 @@ I also rely on code review and pair programming for quality and knowledge sharin
 
 ___
 
-### 10. What would you do if a production issue occurred during off-hours? / How would you approach a system outage or critical failure?
+### 9. What would you do if a production issue occurred during off-hours? / How would you approach a system outage or critical failure?
 
 I acknowledge the incident promptly and follow the runbook or escalation policy. I perform a preliminary assessment to determine severity and quickly implement the safest mitigation, such as a rollback, feature flag, or failover. The first goal is protecting users and stabilising the system, not perfect fixes.
 
@@ -104,7 +101,7 @@ After stabilisation, I perform a blameless postmortem, implement fixes, and upda
 
 ___
 
-### 11. If you discovered a security vulnerability in your app, how would you respond?
+### 10. If you discovered a security vulnerability in your app, how would you respond?
 
 If I discovered a security vulnerability in an app, I would first contain the issue by disabling the vulnerable surface or applying a temporary mitigation without destroying evidence. Containment preserves forensic data and limits exposure while we plan a safe fix.
 
@@ -114,7 +111,7 @@ I would then patch the vulnerability, deploy safely, and monitor for any exploit
 
 ___
 
-### 12. How do you stay calm and focused when debugging under pressure?
+### 11. How do you stay calm and focused when debugging under pressure?
 
 When debugging under pressure, I follow a structured checklist — reproduce the issue, isolate the cause, form hypotheses, and test — which helps reduce random attempts and keeps me focused. The checklist converts pressure into an organised process so progress is visible even if the path is slow.
 
@@ -124,7 +121,7 @@ Throughout the process, I communicate clearly and frequently so stakeholders’ 
 
 ___
 
-### 13. How do you approach optimising a slow-loading web page?
+### 12. How do you approach optimising a slow-loading web page?
 
 I start by measuring real user and lab metrics such as First Contentful Paint, Largest Contentful Paint, Time to Interactive, and total byte weight to identify bottlenecks. Real-user metrics reveal the actual experience across networks and devices, which guides prioritisation.
 
@@ -134,7 +131,7 @@ Finally, I monitor performance across devices and geographies to validate improv
 
 ___
 
-### 14. Describe a time you analysed data before making a decision. (e.g. A/B test results).
+### 13. Describe a time you analysed data before making a decision. (e.g. A/B test results).
 
 Project references: 2PD
 
@@ -146,7 +143,7 @@ After analysing the data, layout B reduced average task time by 22%, reduced err
 
 ___
 
-### 15. Tell me about a project where you had to think creatively to solve a problem.
+### 14. Tell me about a project where you had to think creatively to solve a problem.
 
 Project references: Bare Dating
 

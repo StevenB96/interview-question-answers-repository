@@ -227,11 +227,11 @@ ___
 
 Project references: ACF
 
-On a project (codename ACF), I needed to add GraphQL to an admin portal quickly. My usual approach to time-pressured upskilling is focused learning combined with an isolated prototype, followed by sharing my decisions and knowledge with the team.
+On a project (codename ACF), I needed to add GraphQL to an admin portal quickly. My usual approach to time-pressured upskilling is focused learning combined with an isolated prototype, followed by sharing decisions and knowledge with the team.
 
-I began with a short course on GraphQL fundamentals, then built a prototype using Apollo Server with Express to understand schemas, resolvers, and request flow. This allowed me to experiment safely without risking the main codebase. Once validated, I applied the approach to the application by extending the existing API rather than rewriting it, which reduced risk. I mapped existing data structures to GraphQL types, implemented resolvers and tests, and documented the data model while updating the team knowledge base.
+I began with a short course on GraphQL fundamentals, then built a prototype using Apollo Server with Express to understand schemas, resolvers, and request flow. This allowed me to experiment safely without risking the main codebase. Once validated, I applied the approach to the application by extending the existing API rather than rewriting it, which reduced risk. I mapped existing data structures to GraphQL types, implemented resolvers and tests, and documented the data model.
 
-The result was a maintainable GraphQL integration delivered within the deadline, supported by clear documentation that reduced onboarding friction for future developers.
+Throughout the process I took concise notes and updated the team knowledge base so future onboarding would be faster. The result was a maintainable GraphQL integration delivered within the deadline, with clear documentation that allowed other developers to understand the design quickly and continue building on the work with confidence.
 
 ___
 
