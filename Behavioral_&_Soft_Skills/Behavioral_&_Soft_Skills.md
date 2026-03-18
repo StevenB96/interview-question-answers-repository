@@ -120,15 +120,15 @@ We resolved it with benchmarks, documentation and a pragmatic compromise. The re
 
 ___
 
-### 10. How do you receive and act on feedback? / How do you handle feedback or criticism from peers/managers?
+### 10. How do you receive and act on feedback? / How do you handle feedback or criticism from peers/managers? ✔
 
-Project references: ai_tool-risk_mitigation-demo-project, obs-etl-k8s-demo-project
+Project references: LLL
 
-I always thank people for feedback, then turn it into an action plan I can validate. After interviews I received feedback that I needed more exposure to production debugging. I converted that feedback into a hands-on project.
+I start by thanking people for their feedback and turning it into a clear action plan. I define success criteria, seek peer review, and continue iterating after the initial implementation to ensure continuous improvement.
 
-I built an Observability & ETL demo to practise deployment and monitoring. I set success criteria, sought peer review and iterated until the project demonstrated the skills required.
+**For example**, on project (codename LLL) I received feedback to deepen my understanding of Laravel architecture, so I created a focused learning plan and studied lessons such as “Action / Command Pattern,” “Observer Pattern with Events/Listeners,” and “Facades: They Are Everywhere in Laravel.”
 
-I set success criteria, sought peer review and iterated — feedback became a measurable improvement loop. That process helped me both learn new skills and produce tangible evidence of impact.
+I took notes, used weekly catch-ups to show my manager progress and validate what I’d learned, and continued looking for applicable courses when new challenges arose — a process that both improved my skills and produced tangible evidence of impact.
 
 ___
 
@@ -142,31 +142,35 @@ Finally, I communicate the proposed prioritisation to get stakeholder buy-in. I 
 
 ___
 
-### 12. Give an example of when you took initiative or leadership in a project. / How would you handle incomplete or changing requirements in a project?
+### 12. Give an example of when you took initiative or leadership in a project. / How would you handle incomplete or changing requirements in a project? ✔
 
-Project references: Oman FM
+Project references: OFM
 
-On one project the “nearest embassy” logic was undefined. I documented options, but that slowed decisions, so I organised a face-to-face meeting with the client and project team. Bringing decision-makers together enabled a focused discussion of trade-offs.
+On one project (codename OFM), the “nearest embassy” logic was completely undefined. I documented potential options, but that slowed decision-making. Normally, I could apply my usual decision-making process, but because the logic was undefined and not an implementation issue, input had to come directly from the customer.
 
-Walking everyone through the trade-offs led to a quick clarification and a simple practical implementation. Development resumed with no further delay, and the client had confidence in the agreed approach.
+I organised a face-to-face team meeting to align internal stakeholders, followed by a session with the client. By walking everyone through the trade-offs, we quickly clarified the requirements and agreed on a simple, practical implementation. Development resumed with no further delay, and the client gained confidence in the approach.
 
-It showed that bringing the right people together can be the fastest way to resolve ambiguous requirements. That initiative prevented prolonged indecision and kept the project on schedule.
+This initiative prevented prolonged indecision, kept the project on schedule, and demonstrated that bringing the right people together can be the fastest way to resolve ambiguous requirements.
 
 ___
 
-### 13. How do you communicate complex technical concepts to non-technical stakeholders?
+### 13. How do you communicate complex technical concepts to non-technical stakeholders? ✔
+
+Project references: OFM
 
 I focus on outcomes, use simple analogies and visuals, and avoid jargon. I start with why something matters to the user or business, then show a short diagram or analogy to explain the mechanism in plain language.
 
-For example, explaining an ETL sync to non-technical stakeholders I called the website the “source of truth” and compared updates to a news feed refresh, then showed a simple diagram of the flow. That kept the discussion on user impact rather than technical detail and enabled quick alignment.
+**For example**, on a project (codename OFM), while explaining an ETL sync to non-technical stakeholders, I described the website as the “source of truth” and compared updates to a news-feed refresh. I also showed a simple diagram of the data flow. This kept the discussion focused on the user impact — automation and reliability — rather than technical detail, which helped the group reach quick alignment.
 
 This approach speeds decisions, reduces follow-up clarifications, and helps teams prioritise what drives user value.
 
 ___
 
-### 14. Have you ever disagreed with a manager’s decision? What did you do?
+### 14. Have you ever disagreed with a manager’s decision? What did you do? ✔
 
-My manager proposed splitting boilerplate into multiple repos and automating admin-page generation. I raised operational concerns — extra CI, secrets and limited practical benefit — and presented examples where modularisation helps. I framed my feedback as trade-offs rather than opposition.
+Project references: PB
+
+On a project (codename PB), my manager proposed splitting boilerplate into multiple repos and automating admin-page generation. I raised operational concerns — extra CI, secrets and limited practical benefit — and presented examples where modularisation helps. I framed my feedback as trade-offs rather than opposition.
 
 I respected the decision, helped implement it, and suggested a pilot approach so we could test value with limited risk. The initiative was later dropped, but the process taught me to present trade-offs clearly and propose measurable pilots before wide adoption.
 
@@ -175,40 +179,40 @@ The experience reinforced the value of respectful disagreement, evidence-based r
 ___
 
 
-### 15. How do you ensure you stay current with new technologies?
+### 15. How do you ensure you stay current with new technologies? ✔
 
 I combine courses, community and hands-on practice. Recently I’ve completed courses in Django, Node.js, microservices, Python for data science, NoSQL, ETL, containers, observability, application security and generative AI. Studying broadly helps me spot useful patterns and trade-offs.
 
-I attend meetups and conferences, browse GitHub and Reddit, and set aside time for focused projects — for example an ETL pipeline or an AI demo — so I apply learning immediately. Hands-on projects convert theory into assets the team can reuse.
+I attend meetups and conferences focused on technologies and vendors such as React, Django, Postman, and Kraken. I also browse GitHub and Reddit and set aside time for focused side projects — for example, building an ETL pipeline or an AI demo — so I can apply new ideas immediately. Hands-on projects help convert theory into practical assets that the team can reuse.
 
 I also share findings with peers through pair programming and talks. Sharing accelerates team learning and helps validate whether a new tech actually improves outcomes.
 
 ___
 
 
-### 16. Where do you see yourself in 5 years?.
+### 16. Where do you see yourself in 5 years? ✔
 
-In five years I see myself as a senior or lead full-stack engineer owning end-to-end features and helping shape technical direction. I want to be shipping scalable systems — particularly AI integrations — while mentoring others and improving engineering practices across the team.
+In five years, I see myself as a senior or lead full-stack engineer owning complex features end-to-end and helping shape technical direction. That progression builds naturally on the way I already work — translating product needs into practical technical solutions, taking ownership from concept through production, and collaborating closely with product, design, and operations.
 
-I plan to combine hands-on delivery with a focus on coaching, design reviews, and observability so the systems I own are reliable and the team can move faster. Ultimately, I want to be in a role where I can both deliver high-impact work and amplify others’ contributions.
+As I grow into that role, I want to continue shipping scalable systems, including pragmatic AI integrations, while also mentoring other developers and strengthening engineering practices. My focus would be on areas like architecture, design reviews, and observability so the systems the team builds remain reliable and easy to evolve.
 
-That vision guides my learning priorities today and keeps my efforts aligned with building sustainable, measurable outcomes for the organisation.
-
-___
-
-
-### 17. What motivates you at work?
-
-I’m motivated by solving meaningful problems that deliver business value, learning new technologies, and collaborating with others. Turning an idea into a production feature that actually helps users is especially rewarding and often leads to follow-up improvements.
-
-Seeing measurable user impact and team growth keeps me engaged. I enjoy projects where I can both produce code and help improve processes or documentation so the team benefits long-term.
-
-That combination of tangible user outcomes, continuous learning, and peer collaboration drives my daily work and career choices.
+Ultimately, I want to contribute both through hands-on delivery and by helping the team work more effectively — turning good ideas into well-designed, user-focused products that deliver measurable outcomes for the organisation.
 
 ___
 
 
-### 18. How do you maintain work-life balance?
+### 17. What motivates you at work? ✔
+
+I’m motivated by solving meaningful problems and seeing the real-world impact of the solutions we build. One of the things I enjoy most about software is the rapid feedback loop — translating a product idea into a working feature and quickly seeing whether it improves the user experience or business outcomes.
+
+I’m also motivated by continuous learning. Technology evolves quickly, and I enjoy exploring new tools or frameworks and applying them through hands-on projects so the knowledge becomes practical. That learning often feeds directly back into my work and helps teams adopt better patterns or more efficient approaches.
+
+Finally, I’m motivated by team growth and collaboration. Working with product, design, and operations to deliver solutions — and helping teammates ramp up or improve processes — creates a multiplier effect where both the product and the team improve over time.
+
+___
+
+
+### 18. How do you maintain work-life balance? ✔
 
 I set clear boundaries, prioritise work so I focus on the highest-value tasks during the day, and make time for exercise and recovery. Those habits help me maintain consistent performance without burnout.
 
@@ -219,36 +223,36 @@ By treating balance as an operational issue (planning, communication, recovery) 
 ___
 
 
-### 19. Describe a time you had to learn something quickly to complete a task.
+### 19. Describe a time you had to learn something quickly to complete a task. ✔
 
 Project references: ACF
 
-I needed to add GraphQL to an admin portal fast. I took a short course on GraphQL fundamentals, then built a quick prototype using Apollo Server with Express to learn schemas, resolvers and request flow. The prototype let me experiment without risking the main codebase.
+On a project (codename ACF), I needed to add GraphQL to an admin portal quickly. My usual approach to time-pressured upskilling is focused learning combined with an isolated prototype, followed by sharing my decisions and knowledge with the team.
 
-I applied that pattern to the codebase, mapped data structures to GraphQL types, added resolvers and tests, and documented the model. That made the change maintainable for future developers and reduced onboarding friction.
+I began with a short course on GraphQL fundamentals, then built a prototype using Apollo Server with Express to understand schemas, resolvers, and request flow. This allowed me to experiment safely without risking the main codebase. Once validated, I applied the approach to the application by extending the existing API rather than rewriting it, which reduced risk. I mapped existing data structures to GraphQL types, implemented resolvers and tests, and documented the data model while updating the team knowledge base.
 
-That let me deliver the functionality within the deadline and hand over maintainable code. Rapid, focused learning plus an isolated prototype is my go-to approach for time-pressured upskilling.
+The result was a maintainable GraphQL integration delivered within the deadline, supported by clear documentation that reduced onboarding friction for future developers.
 
 ___
 
-### 20. How would your colleagues describe you?
+### 20. How would your colleagues describe you? ✔
 
 References: Eleni, Jordan, Audrius
 
-Colleagues would describe me as dependable, detail-focused and collaborative — someone who raises the bar on quality while being easy to work with. I try to be the person others can rely on when a problem gets tricky.
+My colleagues would describe me as technically strong, collaborative, and focused on practical improvements. 
 
-They’d say I’m logical, calm under pressure, and willing to mentor others. As one colleague put it, “Steven is a great presence to have around.” I value that reputation because it reflects both technical competence and team-minded behaviour.
+A project team member said, “Challenges the team to improve requirements, delves into details, and suggests creative solutions.” A peer developer said, “Easy to work with, makes time for people, and inspires others to learn.” And a lead developer called me “exceptional in technical proficiency and innovative problem-solving.” 
 
-I work to maintain that perception by being consistent, communicative, and focused on outcomes that help the team succeed.
+Together, these comments reflect my technical leadership, strong interpersonal skills, and a constant drive to help the team improve.
 
 ___
 
 
-### 21. Describe a time you collaborated with others to overcome a challenge.
+### 21. Describe a time you collaborated with others to overcome a challenge. ✔
 
-Project references: Bare Dating
+Project references: BD
 
-During the Bare Dating project, the client decided to bring development in-house and hired a new developer to take over the application. My role was to ensure the transition was smooth and that they could run the system independently.
+On a project (codename BD), the client decided to bring development in-house and hired a new developer to take over the application. My role was to ensure the transition was smooth and that they could run the system independently.
 
 I prepared a concise handover pack covering the architecture, deployment steps and environment setup, then walked through the codebase with them and performed a deployment together so they could see the process end to end. I stayed available to answer questions during the transition period.
 
