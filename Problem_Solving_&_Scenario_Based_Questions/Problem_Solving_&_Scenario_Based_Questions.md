@@ -28,26 +28,26 @@ ___
 
 ### 3. What strategies do you use to debug a complex algorithm? ✔
 
-- Create minimal, reproducible inputs and compare them to small, known-correct examples to reveal where logic diverges.
-- Add assertions and invariants at key steps so the code self-checks and catches errors early.
-- Trace intermediate values with targeted logging or a debugger to observe where state diverges.
-- Verify edge cases, data types, and numerical stability (rounding, overflow).
-- Break the algorithm into smaller functions and unit-test each piece to reduce reasoning complexity.
-- If performance is a concern, profile hotspots and consider more efficient algorithms or data structures.
-- Add tests for boundary values and numeric stability to prevent regressions.
+* Create minimal, reproducible inputs and compare them to small, known-correct examples to reveal where logic diverges.
+* Add assertions and invariants at key steps so the code self-checks and catches errors early.
+* Trace intermediate values with targeted logging or a debugger to observe where state diverges.
+* Verify edge cases, data types, and numerical stability (rounding, overflow).
+* Break the algorithm into smaller functions and unit-test each piece to reduce reasoning complexity.
+* If performance is a concern, profile hotspots and consider more efficient algorithms or data structures.
+* Add tests for boundary values and numeric stability to prevent regressions.
 
 ___
 
 ### 4. How would you evaluate a new feature request to decide whether to implement it?
 
-* Clarify the problem the feature solves, the target users, and the key metrics it should move.
-* Check alignment with product goals and the roadmap; surface dependencies and risks.
-* Consider alternatives or a smaller minimum viable product and whether an experiment can validate core assumptions.
-* Estimate expected impact versus implementation and ongoing maintenance effort.
-* Use prioritisation frameworks (for example, Reach-Impact-Confidence-Effort or the Eisenhower matrix) to compare options objectively.
-* Define measurable acceptance criteria and monitoring to evaluate success after release.
-* Get stakeholder buy-in and schedule the work as prioritised with a clear rollout strategy (feature flags or staged release).
-* Deliver a small, validated increment first to reduce risk, gather feedback, and iterate based on real usage rather than assumptions.
+1. Clarify the problem the feature solves, the target users, and the key metrics it should move.
+2. Check alignment with product goals and the roadmap; surface dependencies and risks.
+3. Consider alternatives or a smaller minimum viable product and whether an experiment can validate core assumptions.
+4. Estimate expected impact versus implementation and ongoing maintenance effort.
+5. Use prioritisation frameworks (for example, Reach-Impact-Confidence-Effort or the Eisenhower matrix) to compare options objectively.
+6. Define measurable acceptance criteria and monitoring to evaluate success after release.
+7. Get stakeholder buy-in and schedule the work as prioritised with a clear rollout strategy (feature flags or staged release).
+8. Deliver a small, validated increment first to reduce risk, gather feedback, and iterate based on real usage rather than assumptions.
 
 ___
 
@@ -131,24 +131,37 @@ Finally, I monitor performance across devices and geographies to validate improv
 
 ___
 
-### 13. Describe a time you analysed data before making a decision. (e.g. A/B test results).
+### 13. Describe a time you analysed data before making a decision. (e.g. A/B test results). ✔
 
 Project references: 2PD
 
-During development of the administration portal, we needed to decide the best layout for the clinical charting interface, which displays patient sensor data and treatment progress. I defined the primary metric upfront as time-to-read key metrics for clinicians and secondary metrics as number of errors or misinterpretations. Clear metrics prevented arguing over aesthetics and focused decisions on clinical efficiency.
+For my general prioritisation approach, please see **“How do you decide if a solution is the best approach to a problem? (Weighing pros/cons)”**. 
 
-We implemented two layouts (A: detailed table-focused view, B: visual chart-focused view) and ran a small usability test with clinical staff, randomising which version they saw. I collected metrics on task completion time, accuracy, and subjective satisfaction and segmented results by device type (desktop vs tablet) so we could spot context-specific effects.
+On a project (codename 2PD), I had to choose the best layout for the clinical charting interface, which shows patient sensor data and treatment progress.
 
-After analysing the data, layout B reduced average task time by 22%, reduced errors by 15%, and had higher satisfaction scores. Based on these results, we chose layout B for rollout, documented the rationale, and monitored adoption post-launch to confirm continued efficiency and accuracy. The data-driven choice improved clinician speed and reduced potential patient risk.
+The criteria I used were clear from the start:
+- speed — how quickly clinicians could read the key metrics,
+- accuracy — how often they interpreted the data correctly,
+- usability across devices — especially desktop vs tablet, and
+- practical implementation factors — like maintainability and clinical auditability.
+
+We compared two options:
+
+- A: table-based layout — dense rows and columns with raw values, which was precise but harder to scan quickly.
+- B: visual chart-based layout — charts and highlights showing trends more clearly, which was designed to make patterns easier to spot.
+
+We ran a small usability test with clinical staff, randomising which version they saw. I measured task completion time, errors or misinterpretations, and satisfaction, then segmented the results by device type to see whether the best option changed in different contexts.
+
+The results showed that B reduced average task time by 22%, reduced errors by 15%, and had better satisfaction scores. Based on that, we chose B for rollout and documented the decision so the reasoning was clear for the team and for clinical review. The data-driven choice improved clinician speed.
 
 ___
 
-### 14. Tell me about a project where you had to think creatively to solve a problem.
+### 14. Tell me about a project where you had to think creatively to solve a problem. ✔
 
-Project references: Bare Dating
+Project references: 2PD
 
-I was tasked with implementing a tutorial feature that walked users through a story with characters, art, and arrows pointing to interface elements. The challenge was ensuring the arrows and artwork lined up correctly across different screen sizes and devices, given tight timelines and constraints of legacy styling systems.
+On a project (codename 2PD), I inherited a Java mobile app that initially only had a GameState class managing local progress and scores, while we were developing the backend from scratch as an MVC system. I was tasked with implementing secure OAuth-style authentication and automatic syncing of game state to the backend.
 
-I proposed two creative approaches: first, using complex styling calculations based on screen dimensions to dynamically position elements; second, implementing an optimisation function to find free space and calculate the shortest path for arrows between elements. I quickly validated both approaches on multiple devices, tracking alignment accuracy and performance, and used prototypes to show trade-offs to stakeholders.
+To achieve this, I enhanced the existing GameState class by adding listeners so that any major change — such as step completion — would trigger callbacks automatically. I then introduced a GameService class to observe these changes and handle all network syncing, keeping the UI layer completely decoupled from backend logic. The networking logic was encapsulated in an ApiClient, which not only performed HTTP requests for syncing but also handled user logins, working with an AuthInterceptor to securely attach OAuth tokens, while a SecureStore and AuthManager managed the tokens safely.
 
-Ultimately, the optimisation approach was chosen, providing consistent alignment across screens, improving the tutorial’s usability, and reducing styling maintenance. The project taught me how to combine creative problem-solving with quick prototyping and rigorous testing to deliver a scalable solution under constraints while keeping launch risk low.
+This architecture allowed the app to sync game state automatically, securely, and efficiently, while reusing the existing GameState class and maintaining a clean, maintainable structure.

@@ -92,7 +92,7 @@ I begin with prioritisation of features. For my general prioritisation approach,
 
 With priorities set, I break features into small, testable tasks, timebox work where useful, and keep the team and stakeholders updated so blockers surface early and decisions about scope are clear. That shared visibility makes it straightforward to decide what to cut or defer when time is limited.
 
-On a project (codename BD), the client repeatedly announced features publicly before they were ready, so I focused the team on demo-critical items, ran frequent internal check-ins, and kept the client informed about progress and trade-offs. By concentrating on the essentials and maintaining tight feedback loops, we delivered what mattered for the demo without surprises and preserved our credibility.
+**For example**, on a project (codename BD), the client repeatedly announced features publicly before they were ready, so I focused the team on demo-critical items, ran frequent internal check-ins, and kept the client informed about progress and trade-offs. By concentrating on the essentials and maintaining tight feedback loops, we delivered what mattered for the demo without surprises and preserved our credibility.
 
 This approach helps keep morale steady under pressure and ensures the team delivers the highest-impact work within the deadline.
 
@@ -126,7 +126,7 @@ Project references: LLL
 
 I start by thanking people for their feedback and turning it into a clear action plan. I define success criteria, seek peer review, and continue iterating after the initial implementation to ensure continuous improvement.
 
-**For example**, on project (codename LLL) I received feedback to deepen my understanding of Laravel architecture, so I created a focused learning plan and studied lessons such as “Action / Command Pattern,” “Observer Pattern with Events/Listeners,” and “Facades: They Are Everywhere in Laravel.”
+**For example**, on a project (codename LLL) I received feedback to deepen my understanding of Laravel architecture, so I created a focused learning plan and studied lessons such as “Action / Command Pattern,” “Observer Pattern with Events/Listeners,” and “Facades: They Are Everywhere in Laravel.”
 
 I took notes, used weekly catch-ups to show my manager progress and validate what I’d learned, and continued looking for applicable courses when new challenges arose — a process that both improved my skills and produced tangible evidence of impact.
 
