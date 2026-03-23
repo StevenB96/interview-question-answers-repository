@@ -110,7 +110,7 @@ Project reference: PB
 
 While working on a project (codename PB), I was tasked with integrating OAuth into our boilerplate to broaden our security offerings. The primary decision was whether to adopt a vendor solution or build a custom OAuth system.
 
-For my general prioritisation approach, please see **“How do you decide if a solution is the best approach to a problem? (Weighing pros/cons)”**. 
+For my general prioritisation approach, please see **“How do you decide if a solution is the best approach to a problem? (What is the best way to do it?)”**. 
 
 I compiled a list of relevant trade-offs, including:
 - Flexibility — As a software house with a diverse client base, it was important to support a range of client requirements.
