@@ -1,8 +1,5 @@
 # Behavioural & Soft Skills
 
-_Italics = Reflection_
-**Bold = Main Point**
-
 ___
 
 ### 1. Tell me about yourself. (Give a concise personal introduction). ✔
